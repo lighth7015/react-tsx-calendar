@@ -1,0 +1,46 @@
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 322px;
+}
+.header {
+  font-size: 1.25rem;
+  padding: 0 0.75em 0.5em;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+}
+.header > button {
+  background: none;
+  border: none;
+}
+
+.header > span {
+  flex: 1;
+}
+
+.headings {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 1.25em;
+}
+.headings > .dayLabel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.header > span > button {
+  border: none;
+  margin: 0 1rem;
+  padding: 0.25rem 0.5rem;
+}
+.calendar > .dateButton {
+  padding: 0.5em;
+  font-size: 1rem;
+  background: none;
+  border: none;
+}
+.calendar > * {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
